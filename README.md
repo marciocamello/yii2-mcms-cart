@@ -93,6 +93,12 @@ use mcms\cart\Cart;
 
 $cart = new Cart();
 
+if($_POST)
+{
+	$cart->update($_POST);
+	Yii::$app->controller->refresh();
+}
+
 ```
 
 ```php
