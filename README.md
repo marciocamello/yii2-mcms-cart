@@ -1,6 +1,6 @@
 Moltin Cart
 ===========
-Cart based in Moltin Cart library
+Cart extensions for Yii 2
 
 Installation
 ------------
