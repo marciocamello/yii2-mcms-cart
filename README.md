@@ -1,4 +1,4 @@
-Moltin Cart
+Yii2-Cart
 ===========
 Cart extensions for Yii 2
 
