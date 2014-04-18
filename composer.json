@@ -2,7 +2,7 @@
     "name": "marciocamello/yii2-mcms-cart",
     "description": "Cart based in Moltin Cart library",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension"],
+    "keywords": ["yii2","extension","cart","moltin"],
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -10,9 +10,13 @@
             "email": "marciocamello@outlook.com"
         }
     ],
+    "require": {
+        "yiisoft/yii2": "dev-master",
+		"yiisoft/yii2-bootstrap": "dev-master"
+    },
     "autoload": {
         "psr-4": {
-            "moltin\\cart\\": ""
+            "mcms\\cart\\": ""
         }
     }
 }
