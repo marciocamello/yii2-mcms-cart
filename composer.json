@@ -1,6 +1,6 @@
 {
     "name": "marciocamello/yii2-mcms-cart",
-    "description": "Cart based in Moltin Cart library",
+    "description": "Yii2 Cart extension",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","mcms","cart","moltin"],
     "license": "BSD-3-Clause",
