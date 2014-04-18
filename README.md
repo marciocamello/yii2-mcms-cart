@@ -25,7 +25,58 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Adding an Item to The Cart
+--------------------------
 
 ```php
-<?= \mcms\cart\AutoloadExample::widget(); ?>```
+
+use mcms\cart\Cart;
+
+$cart = new Cart();
+
+$data = array(
+	'id'      => 'sku_123ABC',
+	'qty'     => 1,
+	'price'   => 39.95,
+	'name'    => 'T-Shirt',
+	'options' => array('Size' => 'L', 'Color' => 'Red')
+);
+
+$cart->insert($data);
+
+```
+
+Adding Multiple Items to The Cart
+---------------------------------
+
+```php
+
+use mcms\cart\Cart;
+
+$cart = new Cart();
+
+$data = array(
+               array(
+                       'id'      => 'sku_123ABC',
+                       'qty'     => 1,
+                       'price'   => 39.95,
+                       'name'    => 'T-Shirt',
+                       'options' => array('Size' => 'L', 'Color' => 'Red')
+                    ),
+               array(
+                       'id'      => 'sku_567ZYX',
+                       'qty'     => 1,
+                       'price'   => 9.95,
+                       'name'    => 'Coffee Mug'
+                    ),
+               array(
+                       'id'      => 'sku_965QRS',
+                       'qty'     => 1,
+                       'price'   => 29.95,
+                       'name'    => 'Shot Glass'
+                    )
+            );
+
+$cart->insert($data);
+
+```
